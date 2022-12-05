@@ -10,22 +10,25 @@ class FeaturesSection extends StatelessWidget {
       isWhite: false,
       title: 'المزايا',
       content: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: const [
-          // TODO: review wording
-          // use images instead of icons
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
           FeatureCard(
-              text: 'شارك في تحديات برمجية علمية تحاكي الواقع',
-              icon: Icon(Icons.share)),
+              text:
+                  'شارك في تحديات برمجية عملية تحاكي الواقع ومطلوبة في سوق العمل',
+              icon: Image.asset('assets/graphics/challenges.png', height: 200)),
           FeatureCard(
-              text: 'احصل على مراجهعة للكود من خبراء برمجيين',
-              icon: Icon(Icons.code)),
+              text:
+                  'احصل على مراجعة تفصيلية للكود من خبراء برمجيين لتحسين أكوادك وتفادي الأخطاء',
+              icon:
+                  Image.asset('assets/graphics/code-review.png', height: 200)),
           FeatureCard(
               text: 'قم بإثراء ملفك الشخصي في GitHub',
-              icon: Icon(Icons.wb_incandescent_sharp)),
+              icon: Image.asset('assets/graphics/enrich-github.png',
+                  height: 200)),
           FeatureCard(
               text: 'احصل على جلسات استشارية مع خبراء في المجال الذي تريده',
-              icon: Icon(Icons.construction)),
+              icon:
+                  Image.asset('assets/graphics/consultation.png', height: 200)),
         ],
       ),
     );
@@ -40,16 +43,28 @@ class FeatureCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      color: Colors.white,
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          children: [
-            icon,
-            const SizedBox(height: 12),
-            Text(text),
-          ],
+    return Padding(
+      padding: const EdgeInsets.all(4.0),
+      child: SizedBox(
+        width: 250,
+        height: 400,
+        child: Card(
+          color: Colors.white,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              children: [
+                icon,
+                const SizedBox(height: 12),
+                Text(
+                  text,
+                  style: Theme.of(context).textTheme.headline6,
+                  textAlign: TextAlign.center,
+                  maxLines: 10,
+                ),
+              ],
+            ),
+          ),
         ),
       ),
     );

@@ -29,10 +29,11 @@ class ProfilePage extends StatelessWidget {
             ),
           ),
           // Consultaion Button
-          ElevatedButton(
-              onPressed: () =>
-                  launchUrl(Uri.tryParse('https://calendly.com/adnsawas')!),
-              child: const Text('اضغط هنا لحجز استشارة')),
+          if (isExpert)
+            ElevatedButton(
+                onPressed: () =>
+                    launchUrl(Uri.tryParse('https://calendly.com/adnsawas')!),
+                child: const Text('اضغط هنا لحجز استشارة')),
           const SizedBox(height: 24),
           // Profile Info and Challenges Progress
           Row(

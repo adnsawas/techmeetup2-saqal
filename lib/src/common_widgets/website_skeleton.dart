@@ -21,10 +21,10 @@ class WebsiteSkeleton extends StatelessWidget {
           actions: [
             TextButton(
                 onPressed: () {
-                  // TODO: go to login page
+                  context.goNamed('profile');
                 },
                 child: const Text(
-                  'مرحبا بك محمد',
+                  'مرحبا محمد',
                   style: TextStyle(color: Colors.white),
                 )),
           ],

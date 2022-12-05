@@ -16,6 +16,7 @@ class TracksSection extends StatelessWidget {
               Image.asset('assets/graphics/angular-logo.png', height: 50),
               Image.asset('assets/graphics/react-logo.png', height: 50),
             ]),
+            const SizedBox(width: 12),
             GestureDetector(
               onTap: () => context.goNamed('challenges'),
               child: TracksCard(trackName: 'برمجة تطبيقات الجوال', children: [
@@ -45,8 +46,9 @@ class TracksCard extends StatelessWidget {
           children: [
             Text(
               trackName,
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline5,
             ),
+            const SizedBox(height: 12),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: children

@@ -14,7 +14,7 @@ class FooterSection extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 48),
             child: Row(
               children: [
-                // TODO: our logo
+                // TODO: our logo instead of Saqal text
                 Text(
                   'صقل',
                   style: Theme.of(context).textTheme.headline3!,

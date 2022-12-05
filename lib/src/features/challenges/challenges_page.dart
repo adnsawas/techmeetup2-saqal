@@ -50,19 +50,13 @@ class ChallengesPage extends StatelessWidget {
                     imagePath: 'assets/images/expert1.png',
                   ),
                 ),
-                GestureDetector(
-                  onTap: () => context.goNamed('expert'),
-                  child: const ProfileImageWithName(
-                    name: 'عبد الكريم المالكي',
-                    imagePath: 'assets/images/expert3.png',
-                  ),
+                const ProfileImageWithName(
+                  name: 'عبد الكريم المالكي',
+                  imagePath: 'assets/images/expert3.png',
                 ),
-                GestureDetector(
-                  onTap: () => context.goNamed('expert'),
-                  child: const ProfileImageWithName(
-                    name: 'حسن إبراهيم',
-                    imagePath: 'assets/images/expert2.png',
-                  ),
+                const ProfileImageWithName(
+                  name: 'حسن إبراهيم',
+                  imagePath: 'assets/images/expert2.png',
                 ),
               ],
             ),

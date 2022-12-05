@@ -33,13 +33,14 @@ class ProfileImageWithName extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   color: whiteText ? Colors.white : AppColors.pimary),
             ),
-            const SizedBox(height: 8)
+            const SizedBox(height: 4)
           ],
           if (subTitle != null)
             Text(
               subTitle!,
-              style:
-                  TextStyle(color: whiteText ? Colors.white : AppColors.pimary),
+              style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                  color: whiteText ? Colors.white : AppColors.pimary,
+                  fontWeight: FontWeight.bold),
             ),
         ],
       ),
