@@ -21,7 +21,7 @@ class ProfileImageWithName extends StatelessWidget {
       child: Column(
         children: [
           CircleAvatar(
-            radius: 60,
+            radius: 80,
             foregroundImage:
                 AssetImage(imagePath ?? 'assets/graphics/profile.png'),
           ),

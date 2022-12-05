@@ -47,17 +47,17 @@ class ChallengesPage extends StatelessWidget {
                   onTap: () => context.goNamed('expert'),
                   child: const ProfileImageWithName(
                     name: 'عدنان سواس',
-                    imagePath: 'assets/images/expert1.png',
+                    imagePath: 'assets/images/adnan-sawas.jpeg',
                   ),
                 ),
-                const ProfileImageWithName(
-                  name: 'عبد الكريم المالكي',
-                  imagePath: 'assets/images/expert3.png',
-                ),
-                const ProfileImageWithName(
-                  name: 'حسن إبراهيم',
-                  imagePath: 'assets/images/expert2.png',
-                ),
+                // const ProfileImageWithName(
+                //   name: 'عبد الكريم المالكي',
+                //   imagePath: 'assets/images/abdulkareem.jpeg',
+                // ),
+                // const ProfileImageWithName(
+                //   name: 'حسن إبراهيم',
+                //   imagePath: 'assets/images/hassan.jpeg',
+                // ),
               ],
             ),
           ),

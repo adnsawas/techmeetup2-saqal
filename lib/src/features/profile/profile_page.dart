@@ -33,7 +33,10 @@ class ProfilePage extends StatelessWidget {
             ElevatedButton(
                 onPressed: () =>
                     launchUrl(Uri.tryParse('https://calendly.com/adnsawas')!),
-                child: const Text('اضغط هنا لحجز استشارة')),
+                child: const Text(
+                  'اضغط هنا لحجز استشارة',
+                  style: TextStyle(fontSize: 18),
+                )),
           const SizedBox(height: 24),
           // Profile Info and Challenges Progress
           Row(

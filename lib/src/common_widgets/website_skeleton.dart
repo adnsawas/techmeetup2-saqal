@@ -17,16 +17,22 @@ class WebsiteSkeleton extends StatelessWidget {
           centerTitle: false,
           title: GestureDetector(
               onTap: () => context.goNamed('landing'),
-              child: const Text('صقل')),
+              child: Image.asset(
+                'assets/images/app-logo-white.png',
+                height: 30,
+              )),
           actions: [
-            TextButton(
-                onPressed: () {
-                  context.goNamed('profile');
-                },
-                child: const Text(
-                  'مرحبا محمد',
-                  style: TextStyle(color: Colors.white),
-                )),
+            Padding(
+              padding: const EdgeInsets.only(left: 12),
+              child: TextButton(
+                  onPressed: () {
+                    context.goNamed('profile');
+                  },
+                  child: const Text(
+                    'مرحبا حسن',
+                    style: TextStyle(color: Colors.white),
+                  )),
+            ),
           ],
         ),
         body: Column(

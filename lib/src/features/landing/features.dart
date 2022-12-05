@@ -22,7 +22,7 @@ class FeaturesSection extends StatelessWidget {
               icon:
                   Image.asset('assets/graphics/code-review.png', height: 200)),
           FeatureCard(
-              text: 'قم بإثراء ملفك الشخصي في GitHub',
+              text: 'قم بإثراء ملفك الشخصي في GitHub لزيادة فرصك الوظيفية',
               icon: Image.asset('assets/graphics/enrich-github.png',
                   height: 200)),
           FeatureCard(
@@ -46,8 +46,8 @@ class FeatureCard extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(4.0),
       child: SizedBox(
-        width: 250,
-        height: 400,
+        width: 300,
+        height: 380,
         child: Card(
           color: Colors.white,
           child: Padding(

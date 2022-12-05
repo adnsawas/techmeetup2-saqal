@@ -22,9 +22,12 @@ class MyApp extends ConsumerWidget {
       builder: (context, child) =>
           Directionality(textDirection: TextDirection.rtl, child: child!),
       theme: ThemeData(
-        textTheme: GoogleFonts.cairoTextTheme(),
-        primaryColor: AppColors.pimary,
-      ),
+          textTheme: GoogleFonts.cairoTextTheme(),
+          primaryColor: AppColors.pimary,
+          elevatedButtonTheme: ElevatedButtonThemeData(
+              style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all(AppColors.pimary),
+          ))),
     );
   }
 }

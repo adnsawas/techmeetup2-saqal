@@ -84,9 +84,9 @@ final goRouterProvider = Provider<GoRouter>((ref) {
               name: AppRoute.profile.name,
               pageBuilder: (context, state) => const NoTransitionPage(
                   child: ProfilePage(
-                userName: 'عدنان سواس',
+                userName: 'حسن إبراهيم',
                 isExpert: false,
-                userImagePath: 'assets/images/expert1.png',
+                userImagePath: 'assets/images/hassan.jpeg',
               )),
             ),
             GoRoute(
@@ -96,7 +96,7 @@ final goRouterProvider = Provider<GoRouter>((ref) {
                   child: ProfilePage(
                 userName: 'عدنان سواس',
                 isExpert: true,
-                userImagePath: 'assets/images/expert3.png',
+                userImagePath: 'assets/images/adnan-sawas.jpeg',
               )),
             ),
           ],
